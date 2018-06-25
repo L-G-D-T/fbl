@@ -1,5 +1,0 @@
-@mixin display($property) {
-	display: -webkit-$property;
-	display: -ms-$property;
-	display: $property;
-}
