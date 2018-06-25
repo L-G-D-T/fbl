@@ -1,0 +1,59 @@
+/* CSS Document */
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url("./ProximaNovaRegular.eot");
+  src: local("ProximaNovaRegular"), url("./ProximaNovaRegular.woff") format("woff"), url("./ProximaNovaRegular.ttf") format("truetype");
+}
+/* MEDIA QUERY */
+@media (min-width: 500px) {
+  #wrapper {
+    max-height: calc(100vh - 2.4rem);
+    overflow-y: auto;
+  }
+
+  nav {
+    display: block;
+  }
+}
+@media (min-width: 900px) {
+  #wrapper {
+    overflow: hidden;
+  }
+
+  header .header-button {
+    width: calc(100%/3) !important;
+  }
+  header .header-title {
+    width: calc(100%/3) !important;
+  }
+  header .header-user {
+    width: calc(100%/3) !important;
+  }
+  header .header-user .dropdown {
+    display: none !important;
+  }
+  header .header-user .dropdown-menu {
+    display: inline-block !important;
+  }
+
+  nav {
+    height: calc(100vh - 5rem);
+    overflow-y: auto;
+  }
+
+  article .bottom .container {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+  article .bottom .container a {
+    font-size: 1em !important;
+  }
+  article .search {
+    margin-top: 0 !important;
+    max-width: 20rem;
+  }
+  article .showcase {
+    max-height: calc(100vh - 13rem);
+    overflow-y: auto;
+  }
+}

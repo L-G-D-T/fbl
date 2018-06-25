@@ -1,0 +1,24 @@
+/* CSS Document */
+$header_bg-color: #2f364a;
+$active_bg-color: #15a4fa;
+$navbar_bg-color: #19202e;
+$nav_bg-color: #1f2637;
+$options_bg-color: #eef1f7;
+$active-color: #97b3ce;
+$footer_bg-color: #181e2c;
+$light_black: #78829d;
+$black: #444c63;
+$red: #e76847;
+$yellow: #fabf00;
+$light_blue: #52bea6;
+$orange: #f2795a;
+$marron: #7874cf;
+$light_marron: #8c97b2;
+
+@font-face {
+	font-family: 'ProximaNovaRegular';
+	src: url('./ProximaNovaRegular.eot');
+	src: local('ProximaNovaRegular'), url('./ProximaNovaRegular.woff') format('woff'), url('./ProximaNovaRegular.ttf') format('truetype');
+}
+
+$proxima: 'ProximaNovaRegular'

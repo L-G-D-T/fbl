@@ -1,0 +1,30 @@
+@import 'mixins';
+
+/* NAVIGATION */
+
+nav {
+	position: absolute;
+	width: 200px;
+}
+section {
+	margin-left: 200px;
+	.showcase {
+		padding: 0;
+		.grid {
+			@include display(flex);
+			flex-flow: wrap;
+			justify-content: space-around;
+			.book-box {
+				width: 200px;
+				margin: 2rem 0.3rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	section {
+		position: relative;
+		margin-left: 0;
+	}
+}
