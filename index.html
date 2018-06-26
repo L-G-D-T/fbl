@@ -37,16 +37,18 @@
 							<div class="circle"></div>
 						</div>
 						<div class="header-title">
-							<a href="" class="title"><i class="fa fa-book"></i>FreeBooks Library</a>
+							<a href="#" class="title"><i class="fa fa-book"></i>FreeBooks Library</a>
 						</div>
 						<div class="header-user">
-							<a href="#" class="dropdown"><i class="fa fa-bars"></i></a>
-							<div class="dropdown-menu">
-								<a href="#" class="help-center">Help Center</a>
-								<div class="circle"></div>
-								<a href="#" class="support">Our Support</a>
-								<div class="circle"></div>
-								<a href="#" class="user-profil">Login</a>
+							<div class="dropdown">
+								<a href="#" class="dropdown-btn"><i class="fa fa-bars"></i></a>
+								<div class="dropdown-menu">
+									<a href="#" class="help-center">Help Center</a>
+									<div class="circle"></div>
+									<a href="#" class="support">Our Support</a>
+									<div class="circle"></div>
+									<a href="#" class="user-profil">Login</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -56,35 +58,37 @@
 					<!-- navigation -->
 					<nav>
 						<div class="content">
-							<div class="nav-v1">
+							<div id="navV1">
 								<a href="#" class="dropzone"><i class="fa fa-plus"></i>ADD BOOK</a>
 							</div>
-							<div class="nav-v2">
+							<div id="navV2">
 								<ul>
-									<li><a href="" class="nav-link"><i class="fa fa-book-open"></i>Now Reading</a></li>
-									<li><a href="" class="nav-link active"><i class="fa fa-globe-americas"></i>Browse</a></li>
-									<li><a href="" class="nav-link"><i class="fa fa-shopping-cart"></i>Buy Books</a></li>
-									<li><a href="" class="nav-link"><i class="fa fa-star"></i>Favourite Books</a></li>
-									<li><a href="" class="nav-link"><i class="fa fa-list"></i>Wishlist</a></li>
-									<li><a href="" class="nav-link"><i class="fa fa-history"></i>History</a></li>
+									<li><a href="#" id="nowReading"><i class="fa fa-book-open"></i>Now Reading</a></li>
+									<li><a href="#" id="browse"><i class="fa fa-globe-americas"></i>Browse</a></li>
+									<li><a href="#" id="buyBooks"><i class="fa fa-shopping-cart"></i>Buy Books</a></li>
+									<li><a href="#" id="favBooks"><i class="fa fa-star"></i>Favourite Books</a></li>
+									<li><a href="#" id="wishList"><i class="fa fa-list"></i>Wishlist</a></li>
+									<li><a href="#" id="history"><i class="fa fa-history"></i>History</a></li>
 								</ul>
 							</div>
-							<div class="nav-v3">
+							<div id="navV3">
 								<ul>
-									<li><a href="" class="nav-link"><div class="circle"></div>Must Read Titles</a></li>
-									<li><a href="" class="nav-link"><div class="circle"></div>Best Of List</a></li>
-									<li><a href="" class="nav-link"><div class="circle"></div>Classic Novels</a></li>
-									<li><a href="" class="nav-link"><div class="circle"></div>Non Fiction</a></li>
+									<li><a href="#" class="nav-link"><div class="circle"></div>Must Read Titles</a></li>
+									<li><a href="#" class="nav-link"><div class="circle"></div>Best Of List</a></li>
+									<li><a href="#" class="nav-link"><div class="circle"></div>Classic Novels</a></li>
+									<li><a href="#" class="nav-link"><div class="circle"></div>Non Fiction</a></li>
 								</ul>
 							</div>
-							<div class="nav-v4">
+							<div id="navV4">
 								<a href="#"></a>
 							</div>
 						</div>
 					</nav>
 					
-					<article>
-						<div class="options">
+					<article class="now-reading">Now Reading</article>
+					
+					<article class="browse">
+						<div class="article-header">
 							<div class="top">
 								<div class="container">
 									<h3>Browse Available Books</h3>
@@ -332,11 +336,68 @@
 							</div>	
 						</div>
 					</article>
+					
+					<article class="buy-books">Buy Books</article>
+					
+					<article class="fav-books">Favourite Books</article>
+					
+					<article class="wishlist">WishList</article>
+					
+					<article class="history">History</article>
+					
+					<article class="welcome">
+						<div class="container">
+							<div class="slideshow">
+								<div class="slides">
+									<div class="slide">
+										<img src="https://source.unsplash.com/1200x900/?books" alt="Welcome slideshow images">
+										<div class="overlay"></div>
+										<div class="content">
+											A
+										</div>
+									</div>
+									<div class="slide">
+										<img src="https://source.unsplash.com/1200x901/?books" alt="Welcome slideshow images">
+										<div class="overlay"></div>
+										<div class="content">
+											B
+										</div>
+									</div>
+									<div class="slide">
+										<img src="https://source.unsplash.com/1200x902/?books" alt="Welcome slideshow images">
+										<div class="overlay"></div>
+										<div class="content">
+											C
+										</div>
+									</div>
+									<div class="slide">
+										<img src="https://source.unsplash.com/1200x903/?books" alt="Welcome slideshow images">
+										<div class="overlay"></div>
+										<div class="content">
+											D
+										</div>
+									</div>
+									<div class="slide">
+										<img src="https://source.unsplash.com/1200x904/?books" alt="Welcome slideshow images">
+										<div class="overlay"></div>
+										<div class="content">
+											E
+										</div>
+									</div>
+								</div>
+								<div class="controls">
+									<button id="controlPrev"><i class="fa fa-arrow-left"></i></button>
+									<button id="controlNext"><i class="fa fa-arrow-right"></i></button>
+								</div>
+							</div>
+						</div>
+					</article>
 				</section>
 				
 				<!-- footer -->
 				<footer id="footer">
 					<div class="container">
+						<marquee behavior="" direction="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam esse provident, laudantium architecto ducimus repudiandae. Necessitatibus molestiae nisi nihil a incidunt omnis ipsa, non libero?</marquee>
 						<div class="settings">
 							<a href="#"><i class="fa fa-question-circle"></i></a>
 							<a href="#"><i class="fa fa-cog"></i></a>
