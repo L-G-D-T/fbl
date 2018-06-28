@@ -37,7 +37,7 @@
 							<div class="circle"></div>
 						</div>
 						<div class="header-title">
-							<a href="#" class="title"><i class="fa fa-book"></i>FreeBooks Library</a>
+							<a href="index.html" class="title"><i class="fa fa-book"></i>FreeBooks Library</a>
 						</div>
 						<div class="header-user">
 							<div class="dropdown">
@@ -47,12 +47,66 @@
 									<div class="circle"></div>
 									<a href="#" class="support">Our Support</a>
 									<div class="circle"></div>
-									<a href="#" class="user-profil">Login</a>
+									<a href="#" id="connect">Login</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</header>
+				
+				<!-- Login sytem -->
+				<div id="loginSystem">
+					<div class="container">
+						<div id="modalConnect">
+							<div class="modal-header">
+								<a href="#" class="login-btn active">Login</a>
+								<a href="#" class="register-btn">Register</a>
+							</div>
+							<div class="modal-body">
+								<form id="login" action="#">
+									<div class="form-group">
+										<label for="pseudo">Enter your pseudo or email: </label>
+										<input type="text" required>
+									</div>
+									<div class="form-group">
+										<label for="password">Password: </label>
+										<input type="password" required>
+									</div>
+									<div class="form-controls">
+										<button type="submit">Connect</button>
+									</div>
+								</form>
+
+								<form id="register" action="">
+									<div class="form-group">
+										<label for="pseudo">Enter your pseudo: </label>
+										<input type="text" required>
+									</div>
+									<div class="form-group">
+										<label for="email">Enter your email: </label>
+										<input type="text" required>
+									</div>
+									<div class="form-group">
+										<label for="password">Password: </label>
+										<input type="password" required>
+									</div>
+									<div class="form-radio">
+										<label for="radio">Subscribe to newsletter: </label>
+										<p><input type="radio"> Yes</p>
+										<p><input type="radio"> No</p>
+									</div>
+									<div class="form-controls">
+										<button type="submit">Create</button>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<a href="#" class="close">Close</a>
+							</div>
+						</div>
+					</div>
+				</div><!-- #loginSystem -->
+
 
 				<section>
 					<!-- navigation -->
@@ -85,313 +139,317 @@
 						</div>
 					</nav>
 					
-					<article class="now-reading">Now Reading</article>
-					
-					<article class="browse">
-						<div class="article-header">
-							<div class="top">
-								<div class="container">
-									<h3>Browse Available Books</h3>
+					<main>
+						<div class="loader"></div>
+
+						<article class="now-reading">Now Reading</article>
+
+						<article class="browse">
+							<div class="article-header">
+								<div class="top">
+									<div class="container">
+										<h3>Browse Available Books</h3>
+									</div>
 								</div>
-							</div>
-							<div class="bottom">
-								<div class="container">
-									<ul>
-										<li><a href="#" class="active">All Books</a></li>
-										<li><a href="#">Most Recent</a></li>
-										<li><a href="#">Most popular</a></li>
-									</ul>
-									<div class="search">
-										<input type="text" name="search" placeholder="Enter Keywords" disabled>
-										<i class="fa fa-search"></i>
+								<div class="bottom">
+									<div class="container">
+										<ul>
+											<li><a href="#" class="active">All Books</a></li>
+											<li><a href="#">Most Recent</a></li>
+											<li><a href="#">Most popular</a></li>
+										</ul>
+										<div class="search">
+											<input type="text" name="search" placeholder="Enter Keywords" disabled>
+											<i class="fa fa-search"></i>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-	
-						<div class="showcase">
+
+							<div class="showcase">
+								<div class="container">
+									<div class="flex">
+										<div class="book-box">
+											<div class="book-cover">
+												<div class="book-cover-text">
+													<div class="book-description">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
+													</div>
+													<a href="#" class="btn">Read More...</a>
+												</div>
+												<img src="img/books/jewelsOfNizam.png" alt="Jewels of Nizam picture">
+											</div>
+											<div class="book-details">
+												<h3>Book Title</h3>
+												<p class="author">Book's Author</p>
+												<div class="rank">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+										</div><!-- book-box -->
+										<div class="book-box">
+											<div class="book-cover">
+												<div class="book-cover-text">
+													<div class="book-description">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
+													</div>
+													<a href="#" class="btn">Read More...</a>
+												</div>
+												<img src="img/books/cakes&babes.png" alt="Jewels of Nizam picture">
+											</div>
+											<div class="book-details">
+												<h3>Book Title</h3>
+												<p class="author">Book's Author</p>
+												<div class="rank">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+										</div><!-- book-box -->
+										<div class="book-box">
+											<div class="book-cover">
+												<div class="book-cover-text">
+													<div class="book-description">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
+													</div>
+													<a href="#" class="btn">Read More...</a>
+												</div>
+												<img src="img/books/jamieOlivier.png" alt="Jewels of Nizam picture">
+											</div>
+											<div class="book-details">
+												<h3>Book Title</h3>
+												<p class="author">Book's Author</p>
+												<div class="rank">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+										</div><!-- book-box -->
+										<div class="book-box">
+											<div class="book-cover">
+												<div class="book-cover-text">
+													<div class="book-description">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
+													</div>
+													<a href="#" class="btn">Read More...</a>
+												</div>
+												<img src="img/books/easyInexpensiveFamilyMeals.png" alt="Jewels of Nizam picture">
+											</div>
+											<div class="book-details">
+												<h3>Book Title</h3>
+												<p class="author">Book's Author</p>
+												<div class="rank">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+										</div><!-- book-box -->
+										<div class="book-box">
+											<div class="book-cover">
+												<div class="book-cover-text">
+													<div class="book-description">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
+													</div>
+													<a href="#" class="btn">Read More...</a>
+												</div>
+												<img src="img/books/paleoSlowCooking.png" alt="Jewels of Nizam picture">
+											</div>
+											<div class="book-details">
+												<h3>Book Title</h3>
+												<p class="author">Book's Author</p>
+												<div class="rank">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+										</div><!-- book-box -->
+										<div class="book-box">
+											<div class="book-cover">
+												<div class="book-cover-text">
+													<div class="book-description">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
+													</div>
+													<a href="#" class="btn">Read More...</a>
+												</div>
+												<img src="img/books/cookLikeAnItalian.png" alt="">
+											</div>
+											<div class="book-details">
+												<h3>Book Title</h3>
+												<p class="author">Book's Author</p>
+												<div class="rank">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+										</div><!-- book-box -->
+										<div class="book-box">
+											<div class="book-cover">
+												<div class="book-cover-text">
+													<div class="book-description">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
+													</div>
+													<a href="#" class="btn">Read More...</a>
+												</div>
+												<img src="img/books/indianCooking.png" alt="">
+											</div>
+											<div class="book-details">
+												<h3>Book Title</h3>
+												<p class="author">Book's Author</p>
+												<div class="rank">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+										</div><!-- book-box -->
+										<div class="book-box">
+											<div class="book-cover">
+												<div class="book-cover-text">
+													<div class="book-description">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
+													</div>
+													<a href="#" class="btn">Read More...</a>
+												</div>
+												<img src="img/books/jamieDoesSpain.png" alt="">
+											</div>
+											<div class="book-details">
+												<h3>Book Title</h3>
+												<p class="author">Book's Author</p>
+												<div class="rank">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+										</div><!-- book-box -->
+										<div class="book-box">
+											<div class="book-cover">
+												<div class="book-cover-text">
+													<div class="book-description">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
+													</div>
+													<a href="#" class="btn">Read More...</a>
+												</div>
+												<img src="img/books/jamie'sItaly.png" alt="">
+											</div>
+											<div class="book-details">
+												<h3>Book Title</h3>
+												<p class="author">Book's Author</p>
+												<div class="rank">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+										</div><!-- book-box -->
+										<div class="book-box">
+											<div class="book-cover">
+												<div class="book-cover-text">
+													<div class="book-description">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
+													</div>
+													<a href="#" class="btn">Read More...</a>
+												</div>
+												<img src="img/books/vegetablesCookbook.png" alt="">
+											</div>
+											<div class="book-details">
+												<h3>Book Title</h3>
+												<p class="author">Book's Author</p>
+												<div class="rank">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+											</div>
+										</div><!-- book-box -->
+									</div>
+								</div>	
+							</div>
+						</article>
+
+						<article class="buy-books">Buy Books</article>
+
+						<article class="fav-books">Favourite Books</article>
+
+						<article class="wishlist">WishList</article>
+
+						<article class="history">History</article>
+
+						<article class="welcome">
 							<div class="container">
-								<div class="flex">
-									<div class="book-box">
-										<div class="book-cover">
-											<div class="book-cover-text">
-												<div class="book-description">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
-												</div>
-												<a href="#" class="btn">Read More...</a>
-											</div>
-											<img src="img/books/jewelsOfNizam.png" alt="Jewels of Nizam picture">
-										</div>
-										<div class="book-details">
-											<h3>Book Title</h3>
-											<p class="author">Book's Author</p>
-											<div class="rank">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
+								<div class="slideshow">
+									<div id="slides">
+										<div class="slide">
+											<img src="https://source.unsplash.com/1200x900/?books" alt="Welcome slideshow images">
+											<div class="overlay"></div>
+											<div class="content">
+												
 											</div>
 										</div>
-									</div><!-- book-box -->
-									<div class="book-box">
-										<div class="book-cover">
-											<div class="book-cover-text">
-												<div class="book-description">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
-												</div>
-												<a href="#" class="btn">Read More...</a>
-											</div>
-											<img src="img/books/cakes&babes.png" alt="Jewels of Nizam picture">
-										</div>
-										<div class="book-details">
-											<h3>Book Title</h3>
-											<p class="author">Book's Author</p>
-											<div class="rank">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
+										<div class="slide">
+											<img src="https://source.unsplash.com/1200x901/?books" alt="Welcome slideshow images">
+											<div class="overlay"></div>
+											<div class="content">
+												
 											</div>
 										</div>
-									</div><!-- book-box -->
-									<div class="book-box">
-										<div class="book-cover">
-											<div class="book-cover-text">
-												<div class="book-description">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
-												</div>
-												<a href="#" class="btn">Read More...</a>
-											</div>
-											<img src="img/books/jamieOlivier.png" alt="Jewels of Nizam picture">
-										</div>
-										<div class="book-details">
-											<h3>Book Title</h3>
-											<p class="author">Book's Author</p>
-											<div class="rank">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
+										<div class="slide">
+											<img src="https://source.unsplash.com/1200x902/?books" alt="Welcome slideshow images">
+											<div class="overlay"></div>
+											<div class="content">
+												
 											</div>
 										</div>
-									</div><!-- book-box -->
-									<div class="book-box">
-										<div class="book-cover">
-											<div class="book-cover-text">
-												<div class="book-description">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
-												</div>
-												<a href="#" class="btn">Read More...</a>
-											</div>
-											<img src="img/books/easyInexpensiveFamilyMeals.png" alt="Jewels of Nizam picture">
-										</div>
-										<div class="book-details">
-											<h3>Book Title</h3>
-											<p class="author">Book's Author</p>
-											<div class="rank">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
+										<div class="slide">
+											<img src="https://source.unsplash.com/1200x903/?books" alt="Welcome slideshow images">
+											<div class="overlay"></div>
+											<div class="content">
+												
 											</div>
 										</div>
-									</div><!-- book-box -->
-									<div class="book-box">
-										<div class="book-cover">
-											<div class="book-cover-text">
-												<div class="book-description">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
-												</div>
-												<a href="#" class="btn">Read More...</a>
+										<div class="slide">
+											<img src="https://source.unsplash.com/1200x904/?books" alt="Welcome slideshow images">
+											<div class="overlay"></div>
+											<div class="content">
+												
 											</div>
-											<img src="img/books/paleoSlowCooking.png" alt="Jewels of Nizam picture">
-										</div>
-										<div class="book-details">
-											<h3>Book Title</h3>
-											<p class="author">Book's Author</p>
-											<div class="rank">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-									</div><!-- book-box -->
-									<div class="book-box">
-										<div class="book-cover">
-											<div class="book-cover-text">
-												<div class="book-description">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
-												</div>
-												<a href="#" class="btn">Read More...</a>
-											</div>
-											<img src="img/books/cookLikeAnItalian.png" alt="">
-										</div>
-										<div class="book-details">
-											<h3>Book Title</h3>
-											<p class="author">Book's Author</p>
-											<div class="rank">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-									</div><!-- book-box -->
-									<div class="book-box">
-										<div class="book-cover">
-											<div class="book-cover-text">
-												<div class="book-description">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
-												</div>
-												<a href="#" class="btn">Read More...</a>
-											</div>
-											<img src="img/books/indianCooking.png" alt="">
-										</div>
-										<div class="book-details">
-											<h3>Book Title</h3>
-											<p class="author">Book's Author</p>
-											<div class="rank">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-									</div><!-- book-box -->
-									<div class="book-box">
-										<div class="book-cover">
-											<div class="book-cover-text">
-												<div class="book-description">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
-												</div>
-												<a href="#" class="btn">Read More...</a>
-											</div>
-											<img src="img/books/jamieDoesSpain.png" alt="">
-										</div>
-										<div class="book-details">
-											<h3>Book Title</h3>
-											<p class="author">Book's Author</p>
-											<div class="rank">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-									</div><!-- book-box -->
-									<div class="book-box">
-										<div class="book-cover">
-											<div class="book-cover-text">
-												<div class="book-description">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
-												</div>
-												<a href="#" class="btn">Read More...</a>
-											</div>
-											<img src="img/books/jamie'sItaly.png" alt="">
-										</div>
-										<div class="book-details">
-											<h3>Book Title</h3>
-											<p class="author">Book's Author</p>
-											<div class="rank">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-									</div><!-- book-box -->
-									<div class="book-box">
-										<div class="book-cover">
-											<div class="book-cover-text">
-												<div class="book-description">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At numquam voluptatem tenetur quis recusandae? Sequi eveniet velit dolore architecto asperiores in debitis ipsam culpa atque, ut provident tempore obcaecati laborum beatae aperiam consectetur quo iure aut cumque voluptatem perferendis animi nihil sint. Quod eveniet esse consectetur aliquam incidunt neque, ab.</p>
-												</div>
-												<a href="#" class="btn">Read More...</a>
-											</div>
-											<img src="img/books/vegetablesCookbook.png" alt="">
-										</div>
-										<div class="book-details">
-											<h3>Book Title</h3>
-											<p class="author">Book's Author</p>
-											<div class="rank">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-											</div>
-										</div>
-									</div><!-- book-box -->
-								</div>
-							</div>	
-						</div>
-					</article>
-					
-					<article class="buy-books">Buy Books</article>
-					
-					<article class="fav-books">Favourite Books</article>
-					
-					<article class="wishlist">WishList</article>
-					
-					<article class="history">History</article>
-					
-					<article class="welcome">
-						<div class="container">
-							<div class="slideshow">
-								<div class="slides">
-									<div class="slide">
-										<img src="https://source.unsplash.com/1200x900/?books" alt="Welcome slideshow images">
-										<div class="overlay"></div>
-										<div class="content">
-											A
 										</div>
 									</div>
-									<div class="slide">
-										<img src="https://source.unsplash.com/1200x901/?books" alt="Welcome slideshow images">
-										<div class="overlay"></div>
-										<div class="content">
-											B
-										</div>
+									<div class="controls">
+										<button id="controlPrev"><i class="fa fa-arrow-left"></i></button>
+										<button id="controlNext"><i class="fa fa-arrow-right"></i></button>
 									</div>
-									<div class="slide">
-										<img src="https://source.unsplash.com/1200x902/?books" alt="Welcome slideshow images">
-										<div class="overlay"></div>
-										<div class="content">
-											C
-										</div>
-									</div>
-									<div class="slide">
-										<img src="https://source.unsplash.com/1200x903/?books" alt="Welcome slideshow images">
-										<div class="overlay"></div>
-										<div class="content">
-											D
-										</div>
-									</div>
-									<div class="slide">
-										<img src="https://source.unsplash.com/1200x904/?books" alt="Welcome slideshow images">
-										<div class="overlay"></div>
-										<div class="content">
-											E
-										</div>
-									</div>
-								</div>
-								<div class="controls">
-									<button id="controlPrev"><i class="fa fa-arrow-left"></i></button>
-									<button id="controlNext"><i class="fa fa-arrow-right"></i></button>
 								</div>
 							</div>
-						</div>
-					</article>
+						</article>
+					</main>
 				</section>
 				
 				<!-- footer -->
