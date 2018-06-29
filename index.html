@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html lang="zxx" lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="zxx" lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="zxx" lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="zxx"> <!--<![endif]-->
 
 <head>
 	<meta charset="utf-8">
@@ -47,102 +47,55 @@
 									<div class="circle"></div>
 									<a href="#" class="support">Our Support</a>
 									<div class="circle"></div>
-									<a href="#" id="connect">Login</a>
+									<a href="#" id="connect"><img src="img/user.png" alt="user's profil picture">Guest,</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</header>
-				
-				<!-- Login sytem -->
-				<div id="loginSystem">
-					<div class="container">
-						<div id="modalConnect">
-							<div class="modal-header">
-								<a href="#" class="login-btn active">Login</a>
-								<a href="#" class="register-btn">Register</a>
-							</div>
-							<div class="modal-body">
-								<form id="login" action="#">
-									<div class="form-group">
-										<label for="pseudo">Enter your pseudo or email: </label>
-										<input type="text" required>
-									</div>
-									<div class="form-group">
-										<label for="password">Password: </label>
-										<input type="password" required>
-									</div>
-									<div class="form-controls">
-										<button type="submit">Connect</button>
-									</div>
-								</form>
-
-								<form id="register" action="">
-									<div class="form-group">
-										<label for="pseudo">Enter your pseudo: </label>
-										<input type="text" required>
-									</div>
-									<div class="form-group">
-										<label for="email">Enter your email: </label>
-										<input type="text" required>
-									</div>
-									<div class="form-group">
-										<label for="password">Password: </label>
-										<input type="password" required>
-									</div>
-									<div class="form-radio">
-										<label for="radio">Subscribe to newsletter: </label>
-										<p><input type="radio"> Yes</p>
-										<p><input type="radio"> No</p>
-									</div>
-									<div class="form-controls">
-										<button type="submit">Create</button>
-									</div>
-								</form>
-							</div>
-							<div class="modal-footer">
-								<a href="#" class="close">Close</a>
-							</div>
-						</div>
-					</div>
-				</div><!-- #loginSystem -->
-
 
 				<main>
 					<!-- navigation -->
-					<nav>
-						<div class="content">
-							<div id="navV1">
-								<a href="#" class="dropzone"><i class="fa fa-plus"></i>ADD BOOK</a>
+					<div id="nav">
+						<div id="navExtendBtn"><i class="fa fa-arrow-right"></i></div>
+						<nav>
+							<div id="navContent">
+								<div id="navV1">
+									<a href="#" class="dropzone"><i class="fa fa-plus"></i><span class="disappeared">ADD BOOK</span></a>
+								</div>
+								<div id="navV2">
+									<ul>
+										<li><a href="#" id="nowReading"><i class="fa fa-book-open"></i><span class="disappeared">Now Reading</span></a></li>
+										<li><a href="#" id="browse"><i class="fa fa-globe-americas"></i><span class="disappeared">Browse</span></a></li>
+										<li><a href="#" id="buyBooks"><i class="fa fa-shopping-cart"></i><span class="disappeared">Buy Books</span></a></li>
+										<li><a href="#" id="favBooks"><i class="fa fa-star"></i><span class="disappeared">Favourite Books</span></a></li>
+										<li><a href="#" id="wishList"><i class="fa fa-list"></i><span class="disappeared">Wishlist</span></a></li>
+										<li><a href="#" id="history"><i class="fa fa-history"></i><span class="disappeared">History</span></a></li>
+									</ul>
+								</div>
+								<div id="navV3">
+									<ul>
+										<li><a href="#" class="nav-link"><div class="circle"></div><span class="disappeared">Must Read Titles</span></a></li>
+										<li><a href="#" class="nav-link"><div class="circle"></div><span class="disappeared">Best Of List</span></a></li>
+										<li><a href="#" class="nav-link"><div class="circle"></div><span class="disappeared">Classic Novels</span></a></li>
+										<li><a href="#" class="nav-link"><div class="circle"></div><span class="disappeared">Non Fiction</span></a></li>
+									</ul>
+								</div>
 							</div>
-							<div id="navV2">
-								<ul>
-									<li><a href="#" id="nowReading"><i class="fa fa-book-open"></i>Now Reading</a></li>
-									<li><a href="#" id="browse"><i class="fa fa-globe-americas"></i>Browse</a></li>
-									<li><a href="#" id="buyBooks"><i class="fa fa-shopping-cart"></i>Buy Books</a></li>
-									<li><a href="#" id="favBooks"><i class="fa fa-star"></i>Favourite Books</a></li>
-									<li><a href="#" id="wishList"><i class="fa fa-list"></i>Wishlist</a></li>
-									<li><a href="#" id="history"><i class="fa fa-history"></i>History</a></li>
-								</ul>
-							</div>
-							<div id="navV3">
-								<ul>
-									<li><a href="#" class="nav-link"><div class="circle"></div>Must Read Titles</a></li>
-									<li><a href="#" class="nav-link"><div class="circle"></div>Best Of List</a></li>
-									<li><a href="#" class="nav-link"><div class="circle"></div>Classic Novels</a></li>
-									<li><a href="#" class="nav-link"><div class="circle"></div>Non Fiction</a></li>
-								</ul>
-							</div>
-							<div id="navV4">
-								<a href="#"></a>
-							</div>
-						</div>
-					</nav>
+						</nav>
+					</div>
 					
 					<section>
-						<div class="loader"></div>
-
-						<article class="now-reading">Now Reading</article>
+						
+						<article class="now-reading">
+							<div class="container">
+								<div class="overlay-article"></div>
+								<div class="content">
+									<p>Nothing to show...</p>
+									<a href="#" class="browse-book">Find a book</a>
+								</div>
+							</div>
+						</article>
 
 						<article class="browse">
 							<div class="article-header">
@@ -394,13 +347,41 @@
 							</div>
 						</article>
 
-						<article class="buy-books">Buy Books</article>
+						<article class="buy-books">
+							<div class="container">
+								<div class="overlay-article"></div>
+								<div class="content">
+									<p>Nothing to show...</p>
+								</div>
+							</div>
+						</article>
 
-						<article class="fav-books">Favourite Books</article>
+						<article class="fav-books">
+							<div class="container">
+								<div class="overlay-article"></div>
+								<div class="content">
+									<p>Nothing to show...</p>
+								</div>
+							</div>
+						</article>
 
-						<article class="wishlist">WishList</article>
+						<article class="wishlist">
+							<div class="container">
+								<div class="overlay-article"></div>
+								<div class="content">
+									<p>Nothing to show...</p>
+								</div>
+							</div>
+						</article>
 
-						<article class="history">History</article>
+						<article class="history">
+							<div class="container">
+								<div class="overlay-article"></div>
+								<div class="content">
+									<p>Nothing to show...</p>
+								</div>
+							</div>
+						</article>
 
 						<article class="welcome">
 							<div class="container">
@@ -449,6 +430,68 @@
 								</div>
 							</div>
 						</article>
+						
+											
+						<!-- Login sytem -->
+						<article id="loginSystem">
+							<div class="container">
+								<div class="overlay-login">
+									<img src="img/overlay-login.jpeg" alt="overlay picture">
+								</div>
+								<div id="modalConnect">
+									<div class="modal-header">
+										<a href="#" class="login-btn active">Login</a>
+										<a href="#" class="register-btn">Register</a>
+									</div>
+									<div class="modal-body">
+										<form id="login" action="#">
+											<div class="form-group">
+												<label for="pseudo">Enter your pseudo or email: </label>
+												<input type="text" required>
+											</div>
+											<div class="form-group">
+												<label for="password">Password: </label>
+												<input type="password" required>
+											</div>
+											<div class="form-controls">
+												<p><input type="radio"> Remember me</p>
+												<button type="submit" disabled>Connect</button>
+											</div>
+										</form>
+
+										<form id="register" action="">
+											<div class="form-group">
+												<label for="pseudo">Enter your pseudo: </label>
+												<input type="text" required>
+											</div>
+											<div class="form-group">
+												<label for="email">Enter your email: </label>
+												<input type="text" required>
+											</div>
+											<div class="form-group">
+												<label for="password">Password: </label>
+												<input type="password" required>
+											</div>
+											<div class="form-controls">
+												<div class="form-radio">
+													<label for="radio">Subscribe to newsletter: </label>
+													<div class="input">
+														<span><input type="radio"> Yes</span>
+														<span><input type="radio"> No</span>
+													</div>
+												</div>
+												<button type="submit" disabled>Create</button>
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<a href="#" class="close">Close</a>
+									</div>
+								</div>
+							</div>
+						</article><!-- #loginSystem -->
+						
+						<div class="loader"></div>
 					</section>
 				</main>
 				
